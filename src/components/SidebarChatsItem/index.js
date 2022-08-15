@@ -9,7 +9,7 @@ const getUser = (users, userLogged) =>
 
 const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
   const [getUserItem] = useCollection(
-    db.collection("users").where("email", "===", getUser(users, user))
+    db.collection("users").where("email", "==", getUser(users, user))
   );
 
   const Avatar = getUserItem?.docs?.[0]?.data();
