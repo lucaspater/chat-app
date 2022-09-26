@@ -6,6 +6,7 @@ import "firebase/compat/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyBOucKWnXVNX9GT8zmOuLNNlxkUq0KLVkA",
   authDomain: "chatapp-5bec3.firebaseapp.com",
+  databaseURL: "https://chatapp-5bec3-default-rtdb.firebaseio.com",
   projectId: "chatapp-5bec3",
   storageBucket: "chatapp-5bec3.appspot.com",
   messagingSenderId: "904380721006",
