@@ -3,6 +3,16 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 
+var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://chatapp-5bec3-default-rtdb.firebaseio.com"
+});
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyBOucKWnXVNX9GT8zmOuLNNlxkUq0KLVkA",
   authDomain: "chatapp-5bec3.firebaseapp.com",
